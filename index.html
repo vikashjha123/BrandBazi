@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrandBazi &#8211; Premium Design &amp; Digital Solutions</title>
+  <meta name="description" content="Professional banners, logos, menus, websites &amp; apps for every business by BrandBazi. Fast delivery, premium quality." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon-svg">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#7c3aed" />
+                <stop offset="100%" stop-color="#06b6d4" />
+              </linearGradient>
+            </defs>
+            <rect width="40" height="40" rx="10" fill="url(#logoGrad)"/>
+            <path d="M12 10V30H20.5C23.5376 30 26 27.5376 26 24.5C26 22.8643 25.284 21.3956 24.1487 20.3954C25.8242 19.4674 27 17.6253 27 15.5C27 12.4624 24.5376 10 21.5 10H12ZM16 14H21.5C22.3284 14 23 14.6716 23 15.5C23 16.3284 22.3284 17 21.5 17H16V14ZM16 21H20.5C22.433 21 24 22.567 24 24.5C24 26.433 22.433 28 20.5 28H16V21Z" fill="white"/>
+            <rect x="10" y="18" width="4" height="4" rx="1" fill="#06b6d4"/>
+          </svg>
+        </div>
+        <span class="logo-text">Brand<span class="logo-accent">Bazi</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" data-i18n="nav-services">Services</a></li>
+        <li><a href="#process" data-i18n="nav-process">Process</a></li>
+        <li><a href="#portfolio" data-i18n="nav-portfolio">Portfolio</a></li>
+        <li><a href="#pricing" data-i18n="nav-pricing">Pricing</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav-quote">Get a Quote</a></li>
+        <li class="lang-switch-wrapper">
+          <button id="lang-switch" class="lang-btn">
+            <span class="lang-text">EN</span>
+            <span class="lang-globe">&#127760;</span>
+          </button>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span data-i18n="hero-badge">Available for New Projects</span>
+      </div>
+      <h1 class="hero-title" data-i18n="hero-title">
+        We Build <span class="gradient-text">Digital Identity</span><br/>
+        For Every Business
+      </h1>
+      <p class="hero-subtitle" data-i18n="hero-subtitle">
+        From a local chai shop to a shopping mall &#8211; we create <strong>logos, banners, menus &amp; websites</strong> that make your brand unforgettable. Delivered on time.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          <span data-i18n="hero-btn-start">Start Your Project</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#portfolio" class="btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          <span data-i18n="hero-btn-work">View Our Work</span>
+        </a>
+      </div>
+
+    </div>
+    <div class="hero-visual">
+      <div class="floating-cards">
+        <div class="float-card card-1">
+          <div class="card-icon">&#127912;</div>
+          <span>Logo Design</span>
+        </div>
+        <div class="float-card card-2">
+          <div class="card-icon">&#127760;</div>
+          <span>Website</span>
+        </div>
+
+        <div class="float-card card-4">
+          <div class="card-icon">&#128444;</div>
+          <span>Banner</span>
+        </div>
+        <div class="center-circle">
+          <img src="logo.png" alt="BrandBazi" class="center-icon" style="width:48px;height:48px;border-radius:50%" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY (Business Types) -->
+  <section class="trust-section">
+    <p class="trust-label" data-i18n="trust-label">We work with businesses of all sizes</p>
+    <div class="trust-badges">
+      <div class="trust-badge" data-i18n="trust-local">&#127978; Local Shops</div>
+      <div class="trust-badge" data-i18n="trust-rect">&#127869; Restaurants</div>
+      <div class="trust-badge" data-i18n="trust-super">&#128722; Supermarkets</div>
+      <div class="trust-badge" data-i18n="trust-malls">&#127980; Malls</div>
+      <div class="trust-badge" data-i18n="trust-startups">&#128188; Startups</div>
+      <div class="trust-badge" data-i18n="trust-clinics">&#127973; Clinics</div>
+      <div class="trust-badge" data-i18n="trust-inst">&#127891; Institutes</div>
+      <div class="trust-badge" data-i18n="trust-hotels">&#127976; Hotels</div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="services-tag">What We Do</span>
+        <h2 class="section-title" data-i18n="services-title">Services That <span class="gradient-text">Grow Your Brand</span></h2>
+        <p class="section-subtitle" data-i18n="services-subtitle">Everything your business needs to look professional and attract more customers</p>
+        <div class="category-filter">
+          <button class="cat-btn active" data-cat="all" data-i18n="cat-all">All Services</button>
+          <button class="cat-btn" data-cat="branding" data-i18n="cat-branding">Branding</button>
+          <button class="cat-btn" data-cat="digital" data-cat-lng="digital" data-i18n="cat-digital">Digital</button>
+          <button class="cat-btn" data-cat="print" data-i18n="cat-print">Print</button>
+        </div>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-cat="branding" data-delay="0">
+          <div class="service-icon-wrap" style="--icon-color: #a78bfa;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 data-i18n="svc-logo-title">Logo &amp; Brand Identity</h3>
+          <p data-i18n="svc-logo-desc">Unique, memorable logos that represent your brand perfectly. Includes multiple variations for print and digital use.</p>
+          <ul class="service-features">
+            <li data-i18n="svc-logo-f1">&#10003; 3 unique concepts</li>
+            <li data-i18n="svc-logo-f2">&#10003; Unlimited revisions</li>
+            <li data-i18n="svc-logo-f3">&#10003; All file formats (PNG, SVG, PDF)</li>
+            <li data-i18n="svc-logo-f4">&#10003; Brand color palette</li>
+          </ul>
+          <a href="#contact" class="service-link" data-i18n="svc-get-started">Get Started &#8594;</a>
+        </div>
+
+        <div class="service-card" data-cat="print" data-delay="100">
+          <div class="service-icon-wrap" style="--icon-color: #34d399;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3 data-i18n="svc-banner-title">Banner &amp; Poster Design</h3>
+          <p data-i18n="svc-banner-desc">Eye-catching banners for shops, events, festivals, sales promotions and social media campaigns.</p>
+          <ul class="service-features">
+            <li data-i18n="svc-banner-f1">&#10003; Print-ready files</li>
+            <li data-i18n="svc-banner-f2">&#10003; Social media sizes</li>
+            <li data-i18n="svc-banner-f3">&#10003; Festival/Event banners</li>
+            <li data-i18n="svc-banner-f4">&#10003; Flex/Vinyl banners</li>
+          </ul>
+          <a href="#contact" class="service-link" data-i18n="svc-get-started">Get Started &#8594;</a>
+        </div>
+
+        <div class="service-card featured-card" data-cat="digital" data-delay="200">
+          <div class="featured-tag">Most Popular</div>
+          <div class="service-icon-wrap" style="--icon-color: #f59e0b;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 data-i18n="svc-web-title">Website Development</h3>
+          <p data-i18n="svc-web-desc">Professional websites for your business that look great on mobile &amp; desktop. From landing pages to full e-commerce stores.</p>
+          <ul class="service-features">
+            <li data-i18n="svc-web-f1">&#10003; Mobile responsive design</li>
+            <li data-i18n="svc-web-f2">&#10003; Contact form &amp; WhatsApp</li>
+            <li data-i18n="svc-web-f3">&#10003; SEO optimized</li>
+            <li data-i18n="svc-web-f4">&#10003; 1 year free support</li>
+          </ul>
+          <a href="#contact" class="service-link" data-i18n="svc-get-started">Get Started &#8594;</a>
+        </div>
+
+        <div class="service-card" data-cat="print" data-delay="400">
+          <div class="service-icon-wrap" style="--icon-color: #60a5fa;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 data-i18n="svc-menu-title">Menu &amp; Catalogue Design</h3>
+          <p data-i18n="svc-menu-desc">Beautiful menus for restaurants, cafes, hotels and product catalogues for any business type.</p>
+          <ul class="service-features">
+            <li data-i18n="svc-menu-f1">&#10003; Print &amp; digital versions</li>
+            <li data-i18n="svc-menu-f2">&#10003; QR code menus</li>
+            <li data-i18n="svc-menu-f3">&#10003; Food photography layout</li>
+            <li data-i18n="svc-menu-f4">&#10003; Easy to update</li>
+          </ul>
+          <a href="#contact" class="service-link" data-i18n="svc-get-started">Get Started &#8594;</a>
+        </div>
+
+        <div class="service-card" data-cat="digital" data-delay="500">
+          <div class="service-icon-wrap" style="--icon-color: #f97316;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 data-i18n="svc-social-title">Social Media &amp; Marketing</h3>
+          <p data-i18n="svc-social-desc">Complete social media branding &#8211; profile setup, post templates, stories, reels covers and ad creatives.</p>
+          <ul class="service-features">
+            <li data-i18n="svc-social-f1">&#10003; Instagram, Facebook, YouTube</li>
+            <li data-i18n="svc-social-f2">&#10003; Post templates (30/month)</li>
+            <li data-i18n="svc-social-f3">&#10003; Story highlights covers</li>
+            <li data-i18n="svc-social-f4">&#10003; Ad creative design</li>
+          </ul>
+          <a href="#contact" class="service-link" data-i18n="svc-get-started">Get Started &#8594;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="process-tag">How It Works</span>
+        <h2 class="section-title" data-i18n="process-title">Simple <span class="gradient-text">4-Step Process</span></h2>
+        <p class="section-subtitle" data-i18n="process-subtitle">From idea to delivery &#8211; fast and hassle-free</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-icon">&#128172;</div>
+          <h3 data-i18n="step1-title">Discuss Requirements</h3>
+          <p data-i18n="step1-desc">Tell us about your business and what you need. We'll understand your vision and goals through a quick call or chat.</p>
+        </div>
+        <div class="process-arrow">&#8594;</div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-icon">&#128161;</div>
+          <h3 data-i18n="step2-title">Get a Custom Quote</h3>
+          <p data-i18n="step2-desc">We'll send you a detailed quote with timeline and pricing based on your specific requirements. No hidden charges.</p>
+        </div>
+        <div class="process-arrow">&#8594;</div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-icon">&#127912;</div>
+          <h3 data-i18n="step3-title">We Create &amp; Revise</h3>
+          <p data-i18n="step3-desc">Our team starts working immediately. You'll get regular updates and can request changes until you're 100% satisfied.</p>
+        </div>
+        <div class="process-arrow">&#8594;</div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-icon">&#128640;</div>
+          <h3 data-i18n="step4-title">Deliver On Time</h3>
+          <p data-i18n="step4-desc">Your project is delivered within the agreed timeline with all files and support documentation. Ready to use!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="portfolio-tag">Our Work</span>
+        <h2 class="section-title" data-i18n="portfolio-title">Projects We're <span class="gradient-text">Proud Of</span></h2>
+        <p class="section-subtitle" data-i18n="portfolio-subtitle">A glimpse of the brands we've built and transformed</p>
+      </div>
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all" data-i18n="port-filter-all">All</button>
+        <button class="filter-btn" data-filter="logo" data-i18n="port-filter-logo">Logo</button>
+        <button class="filter-btn" data-filter="banner" data-i18n="port-filter-banner">Banner</button>
+        <button class="filter-btn" data-filter="website" data-i18n="port-filter-web">Website</button>
+        <button class="filter-btn" data-filter="menu" data-i18n="port-filter-menu">Menu</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item card-anim" data-category="logo">
+          <div class="portfolio-img">
+            <img src="assets/portfolio/royal_curry.png" alt="Royal Curry Logo Branding">
+            <div class="portfolio-overlay">
+              <span class="btn-secondary" style="padding: 8px 16px; font-size: 12px;" data-i18n="cat-branding">Branding</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-i18n="port-1-title">Royal Curry</h4>
+            <span data-i18n="port-1-desc">Premium Restaurant Branding</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item card-anim" data-category="website">
+          <div class="portfolio-img">
+            <img src="assets/portfolio/bio_organics.png" alt="BioOrganics E-commerce Website">
+            <div class="portfolio-overlay">
+              <span class="btn-secondary" style="padding: 8px 16px; font-size: 12px;" data-i18n="cat-digital">Digital</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-i18n="port-2-title">BioOrganics</h4>
+            <span data-i18n="port-2-desc">Healthy Lifestyle E-commerce</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item card-anim" data-category="banner">
+          <div class="portfolio-img">
+            <img src="assets/portfolio/homely_decor.png" alt="Homely Decor Promotional Banner">
+            <div class="portfolio-overlay">
+              <span class="btn-secondary" style="padding: 8px 16px; font-size: 12px;" data-i18n="cat-print">Print</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-i18n="port-3-title">Homely Decor</h4>
+            <span data-i18n="port-3-desc">Sale &amp; Event Banner</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item card-anim" data-category="menu">
+          <div class="portfolio-img">
+            <img src="assets/portfolio/foodie_express.png" alt="FoodieExpress Digital QR Menu">
+            <div class="portfolio-overlay">
+              <span class="btn-secondary" style="padding: 8px 16px; font-size: 12px;" data-i18n="cat-digital">Digital</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-i18n="port-4-title">FoodieExpress</h4>
+            <span data-i18n="port-4-desc">Contactless Digital Menu</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item card-anim" data-category="logo">
+          <div class="portfolio-img">
+            <img src="assets/portfolio/shoe_lab.png" alt="The Shoe Lab Brand Identity">
+            <div class="portfolio-overlay">
+              <span class="btn-secondary" style="padding: 8px 16px; font-size: 12px;" data-i18n="cat-branding">Branding</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-i18n="port-5-title">The Shoe Lab</h4>
+            <span data-i18n="port-5-desc">Retail Brand Identity</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item card-anim" data-category="banner">
+          <div class="portfolio-img">
+            <img src="assets/portfolio/supermegamart.png" alt="SuperMegamart Festive Banner">
+            <div class="portfolio-overlay">
+              <span class="btn-secondary" style="padding: 8px 16px; font-size: 12px;" data-i18n="cat-print">Print</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-i18n="port-6-title">SuperMegamart</h4>
+            <span data-i18n="port-6-desc">Festive Season Banners</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="pricing-tag">Pricing Plans</span>
+        <h2 class="section-title" data-i18n="pricing-title">Transparent <span class="gradient-text">Pricing</span></h2>
+        <p class="section-subtitle" data-i18n="pricing-subtitle">Choose a plan that fits your budget. Custom quotes also available!</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="plan-name" data-i18n="plan-starter-name">Starter</span>
+            <div class="plan-price">
+              <span class="price-currency">&#8377;</span>
+              <span class="price-amount">999</span>
+              <span class="price-period" data-i18n="price-period">/project</span>
+            </div>
+            <p class="plan-desc" data-i18n="plan-starter-desc">Perfect for small local shops</p>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-starter-f1">Logo Design (1 concept)</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-starter-f2">2 Banner Designs</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-starter-f3">Business Card Design</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-starter-f4">3 Revisions</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-starter-f5">3 Day Delivery</span></li>
+            <li class="disabled"><span>&#10007;</span> <span data-i18n="plan-no-web">Website</span></li>
+          </ul>
+          <a href="#contact" class="plan-btn plan-btn-outline" data-i18n="plan-starter-btn">Choose Starter</a>
+        </div>
+
+        <div class="pricing-card featured-pricing">
+          <div class="popular-badge" data-i18n="plan-popular">&#11088; Most Popular</div>
+          <div class="pricing-header">
+            <span class="plan-name" data-i18n="plan-pro-name">Professional</span>
+            <div class="plan-price">
+              <span class="price-currency">&#8377;</span>
+              <span class="price-amount">4,999</span>
+              <span class="price-period" data-i18n="price-period">/project</span>
+            </div>
+            <p class="plan-desc" data-i18n="plan-pro-desc">Best for growing businesses</p>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-pro-f1">Complete Brand Identity</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-pro-f2">5 Banner Designs</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-pro-f3">Menu Design (up to 20 items)</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-pro-f4">5-Page Website</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-pro-f5">Unlimited Revisions</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-pro-f6">7 Day Delivery</span></li>
+          </ul>
+          <a href="#contact" class="plan-btn plan-btn-primary" data-i18n="plan-pro-btn">Choose Professional</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="plan-name" data-i18n="plan-ent-name">Enterprise</span>
+            <div class="plan-price">
+              <span class="price-currency">&#8377;</span>
+              <span class="price-amount" data-i18n="price-custom">Custom</span>
+            </div>
+            <p class="plan-desc" data-i18n="plan-ent-desc">For large businesses &amp; chains</p>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-ent-f1">Full Brand Strategy</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-ent-f2">Unlimited Banners</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-ent-f3">Full Menu System</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-ent-f4">Custom Website</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-ent-f5">Social Media Setup</span></li>
+            <li><span class="check">&#10003;</span> <span data-i18n="plan-ent-f6">6 Month Support</span></li>
+          </ul>
+          <a href="#contact" class="plan-btn plan-btn-outline" data-i18n="plan-ent-btn">Contact Us</a>
+        </div>
+
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="comparison-container reveal">
+        <h3 class="comparison-title" data-i18n="compare-title">Detailed Plan Comparison</h3>
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Starter</th>
+                <th>Professional</th>
+                <th>Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="feat-logo">Logo Concepts</td>
+                <td data-i18n="feat-logo-s">1 Concept</td>
+                <td data-i18n="feat-logo-p">3 Concepts</td>
+                <td data-i18n="price-custom">Unlimited</td>
+              </tr>
+              <tr>
+                <td data-i18n="feat-revisions">Revisions</td>
+                <td>3</td>
+                <td data-i18n="price-custom">Unlimited</td>
+                <td data-i18n="price-custom">Unlimited</td>
+              </tr>
+              <tr>
+                <td data-i18n="feat-website">Website</td>
+                <td>-</td>
+                <td data-i18n="feat-website-p">5 Pages</td>
+                <td data-i18n="feat-website-e">Custom App/Web</td>
+              </tr>
+              <tr>
+                <td data-i18n="feat-delivery">Delivery Time</td>
+                <td data-i18n="feat-delivery-s">3 Days</td>
+                <td data-i18n="feat-delivery-p">7 Days</td>
+                <td data-i18n="feat-delivery-e">Priority</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="pricing-note" data-i18n="pricing-note">&#128161; <strong>Note:</strong> All prices are starting rates. Final price depends on project complexity. We always give a detailed quote before starting!</p>
+    </div>
+  </section>
+
+
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us">
+    <div class="container">
+      <div class="why-us-content">
+        <div class="section-header" style="text-align:left; align-items:flex-start;">
+          <span class="section-tag" data-i18n="why-tag">Why Us?</span>
+          <h2 class="section-title" data-i18n="why-title">We're Different <span class="gradient-text">Here's Why</span></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">&#9889;</div>
+            <h4 data-i18n="why1-title">Lightning Fast Delivery</h4>
+            <p data-i18n="why1-desc">Most projects delivered within 3-7 days. Rush delivery also available!</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">&#128175;</div>
+            <h4 data-i18n="why2-title">100% Satisfaction</h4>
+            <p data-i18n="why2-desc">We revise until you love it. No extra charges for revisions.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">&#128172;</div>
+            <h4 data-i18n="why3-title">Direct Communication</h4>
+            <p data-i18n="why3-desc">Talk directly with the designer. No middlemen, no confusion.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">&#128176;</div>
+            <h4 data-i18n="why4-title">Honest Pricing</h4>
+            <p data-i18n="why4-desc">Clear pricing upfront. No hidden charges, ever.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">&#128274;</div>
+            <h4 data-i18n="why5-title">Your Files, Always</h4>
+            <p data-i18n="why5-desc">All source files and formats handed over to you after delivery.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">&#129309;</div>
+            <h4 data-i18n="why6-title">Long-term Support</h4>
+            <p data-i18n="why6-desc">We're here even after delivery for any changes or updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON WITH LOCAL SHOPS -->
+  <section class="better-than reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="better-tag">Why Choose Us vs Local Print Shops?</span>
+        <h2 class="section-title" data-i18n="better-title">The <span class="gradient-text">Premium Advantage</span></h2>
+        <p class="section-subtitle">Local shops just print; We build a brand that stays in customers' minds.</p>
+      </div>
+      <div class="better-grid">
+        <div class="better-side">
+          <h3 data-i18n="better-local-title">Local Print Shop</h3>
+          <ul class="better-list bad">
+            <li data-i18n="better-local-f1"><span>&#10007;</span> Low resolution, blurry designs</li>
+            <li data-i18n="better-local-f2"><span>&#10007;</span> Same generic clip-art for everyone</li>
+            <li data-i18n="better-local-f3"><span>&#10007;</span> Won't give you source files</li>
+            <li data-i18n="better-local-f4"><span>&#10007;</span> Takes 3-5 days to make changes</li>
+            <li data-i18n="better-local-f5"><span>&#10007;</span> No digital integration (No Smart QR)</li>
+          </ul>
+        </div>
+        <div class="vs-circle">VS</div>
+        <div class="better-side premium">
+          <h3 data-i18n="better-premium-title">BrandBazi</h3>
+          <ul class="better-list good">
+            <li data-i18n="better-premium-f1"><span>&#10003;</span> Ultra-HD Premium Quality</li>
+            <li data-i18n="better-premium-f2"><span>&#10003;</span> Custom, unique brand identity</li>
+            <li data-i18n="better-premium-f3"><span>&#10003;</span> All Source Files (AI, SVG, PDF)</li>
+            <li data-i18n="better-premium-f4"><span>&#10003;</span> Priority changes in hours</li>
+            <li data-i18n="better-premium-f5"><span>&#10003;</span> Smart QR-Code Integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq reveal" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="faq-tag">Questions?</span>
+        <h2 class="section-title" data-i18n="faq-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="section-subtitle" data-i18n="faq-subtitle">Everything you need to know about starting your project with BrandBazi</p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq-q1">How much time does it take for a logo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq-a1">Usually, we deliver the first concepts within 24-48 hours. The final project duration depends on the number of revisions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq-q2">Will I get the source files?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq-a2">Yes, absolutely! We provide all professional source files (AI, SVG, PNG, PDF) for your designs, ready for both web and high-quality printing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq-q3">Do you provide printing services?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq-a3">We are a design agency, but we have local printing partners. We can manage the printing and delivery process for you upon request!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq-q4">How many revisions can I ask for?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq-a4">We offer unlimited revisions in our Pro and Enterprise plans because your 100% satisfaction is our top priority.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq-q5">How do I pay?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq-a5">We accept UPI, Bank Transfer, and all major digital payment methods in India. Usually, we start with a 50% advance for new projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="contact-tag">Get In Touch</span>
+        <h2 class="section-title" data-i18n="contact-title">Let's Build Something <span class="gradient-text">Amazing Together</span></h2>
+        <p class="section-subtitle" data-i18n="contact-subtitle">Tell us about your project and we'll get back to you within 24 hours</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3 data-i18n="contact-quick">Quick Contact</h3>
+          <div class="contact-item">
+            <span class="contact-icon">&#128241;</span>
+            <div>
+              <strong data-i18n="contact-wa">WhatsApp</strong>
+              <a href="https://wa.me/917250538660" target="_blank">+91 72505 38660</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#128231;</span>
+            <div>
+              <strong data-i18n="contact-email">Email</strong>
+              <a href="mailto:vikash.works03@gmail.com">vikash.works03@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#9200;</span>
+            <div>
+              <strong data-i18n="contact-hours">Working Hours</strong>
+              <span data-i18n="footer-hours">Mon&#8211;Sat, 9AM &#8211; 8PM IST</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#128205;</span>
+            <div>
+              <strong data-i18n="contact-loc">Location</strong>
+              <span data-i18n="contact-loc-val">India (Remote Services Everywhere)</span>
+            </div>
+          </div>
+          <a href="https://wa.me/917250538660?text=Hi%2C%20I%20want%20to%20discuss%20my%20project!" target="_blank" class="whatsapp-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-i18n="contact-chat">Chat on WhatsApp</span>
+          </a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name" data-i18n="form-name">Your Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" data-i18n-ph="ph-name" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" data-i18n="form-phone">Phone / WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Number" data-i18n-ph="ph-phone" required />
+            </div>
+            <div class="form-group">
+              <label for="business" data-i18n="form-biz-type">Business Type</label>
+              <input type="text" id="business" name="business" placeholder="e.g. Restaurant, Shop" data-i18n-ph="ph-biz" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service" data-i18n="form-svc-label">Service Needed *</label>
+            <select id="service" name="service" required>
+              <option value="" data-i18n="form-svc-default">Select a service...</option>
+              <option data-i18n="svc-logo-title">Logo &amp; Brand Identity</option>
+              <option data-i18n="svc-banner-title">Banner / Poster Design</option>
+              <option data-i18n="svc-web-title">Website Development</option>
+              <option data-i18n="svc-menu-title">Menu Design</option>
+              <option data-i18n="svc-social-title">Social Media Package</option>
+              <option data-i18n="svc-ent-pkg">Complete Business Package</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="form-msg-label">Tell us about your project</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your requirements, preferred colors, style, deadline, etc." data-i18n-ph="ph-msg"></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span data-i18n="form-submit">Send Message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess" data-i18n="form-success">
+            &#10004; Message sent! We'll contact you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="logo.png" alt="BrandBazi" class="logo-icon-img" style="width:32px;height:32px;border-radius:6px" />
+            <span class="logo-text">Brand<span class="logo-accent">Bazi</span></span>
+          </a>
+          <p data-i18n="footer-desc">Making every business look premium &#8211; from small shops to large enterprises.</p>
+          <div class="founder-info" style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.1)">
+            <p style="color:#a78bfa;font-weight:600;font-size:0.85rem;margin-bottom:4px" data-i18n="founded-by">Founded by</p>
+            <p style="color:#ccc;font-size:0.9rem;line-height:1.6">
+              <strong style="color:#fff">Vikash Jha</strong> &#8211; <span data-i18n="founder-title">Founder</span><br/>
+              <strong style="color:#fff">Aditya Raj</strong> &#8211; <span data-i18n="co-founder-title">Co-Founder</span>
+            </p>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Instagram">IG</a>
+            <a href="#" class="social-link" title="Facebook">FB</a>
+            <a href="#" class="social-link" title="YouTube">YT</a>
+            <a href="#" class="social-link" title="WhatsApp">WA</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="nav-services">Services</h4>
+          <ul>
+            <li><a href="#services" data-i18n="svc-logo-title">Logo Design</a></li>
+            <li><a href="#services" data-i18n="svc-banner-title">Banner Design</a></li>
+            <li><a href="#services" data-i18n="svc-web-title">Website Dev</a></li>
+            <li><a href="#services" data-i18n="svc-menu-title">Menu Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer-company">Company</h4>
+          <ul>
+            <li><a href="#process" data-i18n="nav-process">How We Work</a></li>
+            <li><a href="#portfolio" data-i18n="nav-portfolio">Portfolio</a></li>
+            <li><a href="#pricing" data-i18n="nav-pricing">Pricing</a></li>
+            <li><a href="#contact" data-i18n="contact-tag">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="contact-tag">Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/917250538660" data-i18n="footer-wa">WhatsApp Us</a></li>
+            <li><a href="mailto:vikash.works03@gmail.com" data-i18n="footer-email">Email Us</a></li>
+            <li><span style="color:#aaa" data-i18n="footer-hours">Mon&#8211;Sat, 9AM&#8211;8PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer-rights">&#169; 2026 BrandBazi. All rights reserved. | Founded by Vikash Jha &amp; Aditya Raj | Made with &#10084;&#65039; in India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/917250538660?text=Hi%2C%20I%20want%20to%20query%20about%20a%20new%20project." class="whatsapp-widget" target="_blank" aria-label="Chat on WhatsApp">
+    <div class="wa-tooltip" data-i18n="wa-tooltip">Need Help? Chat with us</div>
+    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
