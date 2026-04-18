@@ -4,19 +4,15 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files from the current directory
-app.use(express.static(__dirname));
-
 // Nodemailer Transporter Setup
 const transporter = nodemailer.createTransport({
-    service: 'gmail', // You can change this to your email provider
+    service: 'gmail',
     auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
@@ -47,23 +43,18 @@ app.post('/api/contact', async (req, res) => {
             `
         };
 
-        // Note: For this to work in production, you need to configure EMAIL_USER and EMAIL_PASS in your .env file.
-        // Actually send the email using the provided credentials
         await transporter.sendMail(mailOptions);
-        
-        console.log(`Mock Email Sent: Lead from ${name} for ${service}`);
-        
         res.status(200).json({ success: true, message: 'Message sent successfully!' });
     } catch (error) {
         console.error('Error sending email:', error);
-        res.status(500).json({ success: false, message: 'Failed to send message. Please try again later.' });
+        res.status(500).json({ success: false, message: 'Failed to send message.' });
     }
 });
 
+// For local testing
+const PORT = process.env.PORT || 3000;
 if (process.env.NODE_ENV !== 'production') {
-    app.listen(PORT, () => {
-        console.log(`Server is running on http://localhost:${PORT}`);
-    });
+    app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 }
 
 module.exports = app;
