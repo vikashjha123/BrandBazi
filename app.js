@@ -10,6 +10,7 @@ const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
+  document.body.classList.toggle('no-scroll');
   const spans = hamburger.querySelectorAll('span');
   if (navLinks.classList.contains('open')) {
     spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
@@ -24,6 +25,7 @@ hamburger.addEventListener('click', () => {
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
+    document.body.classList.remove('no-scroll');
     hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = '1'; });
   });
 });
