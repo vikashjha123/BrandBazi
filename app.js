@@ -182,19 +182,51 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-// ===== CURSOR GLOW EFFECT =====
-const cursorGlow = document.createElement('div');
-cursorGlow.style.cssText = `
-  position: fixed; width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(124,58,237,0.06) 0%, transparent 70%);
-  border-radius: 50%; pointer-events: none; z-index: 0;
-  transform: translate(-50%, -50%); transition: opacity 0.3s;
-`;
-document.body.appendChild(cursorGlow);
+// ===== CUSTOM CURSOR SYSTEM =====
+const cursor = document.createElement('div');
+const cursorDot = document.createElement('div');
+cursor.className = 'custom-cursor';
+cursorDot.className = 'cursor-dot';
+document.body.appendChild(cursor);
+document.body.appendChild(cursorDot);
+
+let mouseX = 0, mouseY = 0;
+let cursorX = 0, cursorY = 0;
 
 document.addEventListener('mousemove', (e) => {
-  cursorGlow.style.left = e.clientX + 'px';
-  cursorGlow.style.top = e.clientY + 'px';
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  
+  // Instant dot position
+  cursorDot.style.left = mouseX + 'px';
+  cursorDot.style.top = mouseY + 'px';
+});
+
+// Smooth ring animation
+function animateCursor() {
+  let distX = mouseX - cursorX;
+  let distY = mouseY - cursorY;
+  
+  cursorX = cursorX + (distX * 0.15);
+  cursorY = cursorY + (distY * 0.15);
+  
+  cursor.style.left = cursorX + 'px';
+  cursor.style.top = cursorY + 'px';
+  
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+
+// Hover effect for links and buttons
+document.querySelectorAll('a, button, .service-card, .portfolio-item').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.classList.add('cursor-hover');
+    cursorDot.classList.add('dot-hide');
+  });
+  el.addEventListener('mouseleave', () => {
+    cursor.classList.remove('cursor-hover');
+    cursorDot.classList.remove('dot-hide');
+  });
 });
 
 // ===== ADD KEYFRAMES & GLOBAL REVEAL =====
@@ -203,6 +235,52 @@ styleEl.textContent = `
   @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
   .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ===== CUSTOM CURSOR STYLES ===== */
+  @media (pointer: fine) {
+    body { cursor: none; }
+    a, button { cursor: none; }
+
+    .custom-cursor {
+      width: 40px;
+      height: 40px;
+      border: 1.5px solid var(--accent);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 10001;
+      transform: translate(-50%, -50%);
+      transition: width 0.3s, height 0.3s, background-color 0.3s, border-color 0.3s;
+    }
+
+    .cursor-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--accent-2);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 10002;
+      transform: translate(-50%, -50%);
+    }
+
+    .cursor-hover {
+      width: 70px;
+      height: 70px;
+      background-color: rgba(124,58,237,0.1);
+      border-color: var(--accent-2);
+    }
+
+    .dot-hide {
+      opacity: 0;
+    }
+  }
+
+  /* Fallback for touch devices */
+  @media (pointer: coarse) {
+    .custom-cursor, .cursor-dot { display: none; }
+    body { cursor: auto; }
+  }
 `;
 document.head.appendChild(styleEl);
 
