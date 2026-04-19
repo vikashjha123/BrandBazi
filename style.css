@@ -621,16 +621,18 @@ textarea { resize: vertical; min-height: 120px; }
   transform: translateX(5px);
 }
 .founder-avatar {
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  font-weight: 800;
-  color: white;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.15);
   flex-shrink: 0;
+  background: var(--bg-card);
+}
+.founder-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .founder-avatar.vj { background: linear-gradient(135deg, #7c3aed, #06b6d4); }
 .founder-avatar.ar { background: linear-gradient(135deg, #ec4899, #7c3aed); }
