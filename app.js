@@ -415,7 +415,7 @@ const translations = {
     'footer-wa': 'WhatsApp Us',
     'footer-email': 'Email Us',
     'footer-hours': 'Mon&ndash;Sat, 9AM&ndash;8PM',
-    'footer-rights': '&copy; 2026 BrandBazi. All rights reserved. | Founded by Vikash Jha &amp; Aditya Raj | Made with &#10084;&#65039; in India',
+    'footer-rights': '&copy; 2026 BrandBazi. All rights reserved. | Made with &#10084;&#65039; in India',
   },
   hi: {
     // Nav
@@ -637,7 +637,7 @@ const translations = {
     'footer-wa': 'व्हाट्सएप करें',
     'footer-email': 'ईमेल करें',
     'footer-hours': 'सोम-शनि, सुबह 9 से रात 8 बजे',
-    'footer-rights': '&copy; 2026 BrandBazi. सर्वाधिकार सुरक्षित। | विकाश झा और आदित्य राज द्वारा स्थापित | भारत में निर्मित &#10084;&#65039;',
+    'footer-rights': '&copy; 2026 BrandBazi. सर्वाधिकार सुरक्षित। | भारत में निर्मित &#10084;&#65039;',
   }
 };
 
