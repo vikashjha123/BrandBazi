@@ -110,13 +110,53 @@ contactForm.addEventListener('submit', async (e) => {
   submitBtn.disabled = true;
 
   const formData = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    phone: document.getElementById('phone').value,
-    business: document.getElementById('business').value,
+    name: document.getElementById('name').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    phone: document.getElementById('phone').value.trim(),
+    business: document.getElementById('business').value.trim(),
     service: document.getElementById('service').value,
-    message: document.getElementById('message').value
+    message: document.getElementById('message').value.trim()
   };
+
+  // Helper: Basic Email Regex
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+  };
+
+  // Helper: Basic Phone Regex (10 to 12 digits)
+  const validatePhone = (phone) => {
+    return String(phone).match(/^[0-9]{10,12}$/);
+  };
+
+  // Validation Check
+  let errorMsg = '';
+  if (!validateEmail(formData.email)) {
+    errorMsg = currentLang === 'en' ? 'Please enter a valid email address.' : 'कृपया सही ईमेल पता दर्ज करें।';
+  } else if (!validatePhone(formData.phone)) {
+    errorMsg = currentLang === 'en' ? 'Please enter a valid 10-digit phone number.' : 'कृपया 10 अंकों का सही फोन नंबर दर्ज करें।';
+  }
+
+  if (errorMsg) {
+    formSuccess.style.color = '#ef4444';
+    formSuccess.style.backgroundColor = 'rgba(239,68,68,0.1)';
+    formSuccess.style.borderColor = 'rgba(239,68,68,0.3)';
+    formSuccess.innerHTML = '❌ ' + errorMsg;
+    formSuccess.style.display = 'block';
+    
+    submitBtn.innerHTML = `<span>${translations[currentLang]['form-submit']}</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>`;
+    submitBtn.style.opacity = '1';
+    submitBtn.disabled = false;
+
+    setTimeout(() => {
+      formSuccess.style.display = 'none';
+      formSuccess.style.color = '';
+      formSuccess.style.backgroundColor = '';
+      formSuccess.style.borderColor = '';
+    }, 5000);
+    return;
+  }
 
   try {
     const response = await fetch('/api/contact', {
