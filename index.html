@@ -24,8 +24,9 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="translations.js" defer></script>
 </head>
 <body>
 
@@ -92,9 +93,9 @@
           <span data-i18n="hero-btn-start">Start Your Project</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#portfolio" class="btn-secondary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          <span data-i18n="hero-btn-work">View Our Work</span>
+        <a href="#free-audit" class="btn-secondary pulse-btn">
+          <span data-i18n="hero-btn-audit">Get Free Brand Audit</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
         </a>
       </div>
 
@@ -115,11 +116,13 @@
           <span>Banner</span>
         </div>
         <div class="center-circle">
-          <img src="logo.png" alt="BrandBazi" class="center-icon" style="width:48px;height:48px;border-radius:50%" />
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:40px;height:40px">
+            <rect width="40" height="40" rx="10" fill="white"/>
+            <path d="M12 10V30H20.5C23.5376 30 26 27.5376 26 24.5C26 22.8643 25.284 21.3956 24.1487 20.3954C25.8242 19.4674 27 17.6253 27 15.5C27 12.4624 24.5376 10 21.5 10H12ZM16 14H21.5C22.3284 14 23 14.6716 23 15.5C23 16.3284 22.3284 17 21.5 17H16V14ZM16 21H20.5C22.433 21 24 22.567 24 24.5C24 26.433 22.433 28 20.5 28H16V21Z" fill="#7c3aed"/>
+          </svg>
         </div>
       </div>
-    </div>
-  </section>
+    </div>  </section>
 
   <!-- TRUSTED BY (Business Types) -->
   <section class="trust-section">
@@ -134,7 +137,7 @@
       <div class="trust-badge" data-i18n="trust-inst">&#127891; Institutes</div>
       <div class="trust-badge" data-i18n="trust-hotels">&#127976; Hotels</div>
     </div>
-  </section>
+    </div>  </section>
 
   <!-- SERVICES SECTION -->
   <section class="services" id="services">
@@ -244,8 +247,7 @@
         </div>
 
       </div>
-    </div>
-  </section>
+    </div>  </section>
 
   <!-- PROCESS SECTION -->
   <section class="process" id="process">
@@ -284,8 +286,7 @@
           <p data-i18n="step4-desc">Your project is delivered within the agreed timeline with all files and support documentation. Ready to use!</p>
         </div>
       </div>
-    </div>
-  </section>
+    </div>  </section>
 
   <!-- PORTFOLIO SECTION -->
   <section class="portfolio" id="portfolio">
@@ -305,7 +306,7 @@
       <div class="portfolio-grid">
         <div class="portfolio-item card-anim" data-category="logo">
           <div class="portfolio-img">
-            <img src="assets/portfolio/royal_curry.png" alt="Royal Curry Logo Branding">
+            <img src="assets/portfolio/royal_curry.png" alt="Royal Curry Branding" loading="lazy">
             <div class="portfolio-overlay">
               <span class="btn-secondary" style="padding: 8px 16px; font-size: 12px;" data-i18n="cat-branding">Branding</span>
             </div>
@@ -318,7 +319,7 @@
 
         <div class="portfolio-item card-anim" data-category="website">
           <div class="portfolio-img">
-            <img src="assets/portfolio/bio_organics.png" alt="BioOrganics E-commerce Website">
+            <img src="assets/portfolio/bio_organics.png" alt="BioOrganics Website" loading="lazy">
             <div class="portfolio-overlay">
               <span class="btn-secondary" style="padding: 8px 16px; font-size: 12px;" data-i18n="cat-digital">Digital</span>
             </div>
@@ -331,7 +332,7 @@
 
         <div class="portfolio-item card-anim" data-category="banner">
           <div class="portfolio-img">
-            <img src="assets/portfolio/homely_decor.png" alt="Homely Decor Promotional Banner">
+            <img src="assets/portfolio/homely_decor.png" alt="Homely Decor Banner" loading="lazy">
             <div class="portfolio-overlay">
               <span class="btn-secondary" style="padding: 8px 16px; font-size: 12px;" data-i18n="cat-print">Print</span>
             </div>
@@ -381,8 +382,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </div>  </section>
 
   <!-- PRICING SECTION -->
   <section class="pricing" id="pricing">
@@ -502,8 +502,7 @@
         </div>
       </div>
       <p class="pricing-note" data-i18n="pricing-note">&#128161; <strong>Note:</strong> All prices are starting rates. Final price depends on project complexity. We always give a detailed quote before starting!</p>
-    </div>
-  </section>
+    </div>  </section>
 
 
 
@@ -548,8 +547,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </div>  </section>
 
   <!-- COMPARISON WITH LOCAL SHOPS -->
   <section class="better-than reveal">
@@ -582,7 +580,22 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div>  </section>
+
+  <!-- FREE AUDIT CTA (Lead Magnet) -->
+  <section class="free-audit-banner reveal" id="free-audit">
+    <div class="container audit-container">
+      <div class="audit-text">
+        <h2 data-i18n="audit-title">Is your business missing <span class="gradient-text">customers online?</span></h2>
+        <p data-i18n="audit-subtitle">Get a <strong>FREE 15-minute Brand Audit</strong> call. We'll show you exactly how to look more premium and attract 2x more clients. No obligation!</p>
+      </div>
+      <div class="audit-action">
+        <a href="https://wa.me/917250538660?text=Hi%20BrandBazi!%20I%20want%20to%20book%20my%20FREE%20Brand%20Audit%20for%20my%20business." target="_blank" class="btn-primary">
+          <span data-i18n="audit-btn">Book Free Audit Now</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </a>
+      </div>
+    </div>  </section>
   </section>
 
   <!-- FAQ SECTION -->
@@ -645,8 +658,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </div>  </section>
 
   <!-- CONTACT SECTION -->
   <section class="contact" id="contact">
@@ -737,8 +749,7 @@
           </div>
         </form>
       </div>
-    </div>
-  </section>
+    </div>  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -746,7 +757,12 @@
       <div class="footer-content">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <img src="logo.png" alt="BrandBazi" class="logo-icon-img" style="width:32px;height:32px;border-radius:6px" />
+            <div class="logo-icon-svg" style="width:32px;height:32px">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="10" fill="url(#logoGrad)"/>
+                <path d="M12 10V30H20.5C23.5376 30 26 27.5376 26 24.5C26 22.8643 25.284 21.3956 24.1487 20.3954C25.8242 19.4674 27 17.6253 27 15.5C27 12.4624 24.5376 10 21.5 10H12ZM16 14H21.5C22.3284 14 23 14.6716 23 15.5C23 16.3284 22.3284 17 21.5 17H16V14ZM16 21H20.5C22.433 21 24 22.567 24 24.5C24 26.433 22.433 28 20.5 28H16V21Z" fill="white"/>
+              </svg>
+            </div>
             <span class="logo-text">Brand<span class="logo-accent">Bazi</span></span>
           </a>
           <p data-i18n="footer-desc">Making every business look premium &#8211; from small shops to large enterprises.</p>
@@ -828,6 +844,6 @@
     <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
